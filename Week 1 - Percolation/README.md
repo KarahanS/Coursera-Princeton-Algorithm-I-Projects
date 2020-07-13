@@ -33,6 +33,7 @@ Project involves my solution to the percolation problem. This problem is one of 
 in the online algorithm course of Princeton University. PercolationVisualizer is already given
 in the specification of the assignment. My work consists of percolation.java and percolationStats.java.
 Two WeightedQuickUnionUF objects are used in order to deal with "backwash" problem.
+
 Bonus Test Case : 0/1 (Total memory test) 
 
 # References
