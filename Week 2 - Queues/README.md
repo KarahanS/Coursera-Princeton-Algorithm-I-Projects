@@ -7,6 +7,7 @@ Project involves my solution to the deques and randomized queue assignment. My w
 
 Bonus Test Case : 0/1 
 (Check that maximum size of any or Deque or RandomizedQueue object created is equal to k.)
+<!-- Check Issues for detailed information -->
 
 # References
 * https://coursera.cs.princeton.edu/algs4/assignments/queues/specification.php
