@@ -6,5 +6,5 @@ My solutions to the given assignments in the online course Algorithms, Part I by
 | Week 1        | Percolation   |100/100| 
 | Week 2        | Queues        |100/100| 
 | Week 3        | Collinear     |100/100|
-| Week 4        | 8 Puzzle      |       |
+| Week 4        | 8 Puzzle      |100/100|
 | Week 5        | Kd-Trees      |       |
