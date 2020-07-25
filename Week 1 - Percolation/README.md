@@ -1,4 +1,4 @@
-# Percolation-Princeton
+# Percolation
 A program to estimate the value of the percolation threshold using Manto Carlo simulation.
 # Percolation
 In physics, chemistry and materials science, percolation refers to the movement and filtering of fluids through porous 
