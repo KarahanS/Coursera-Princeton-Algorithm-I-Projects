@@ -1,18 +1,13 @@
-# 8-Puzzle
-A program to solve the 8-puzzle problem (and its natural generalizations) using the A* search algorithm.
-# The Problem
-The 8-puzzle is a sliding puzzle that is played on a 3-by-3 grid with 8 square tiles labeled 1 through 8, plus a blank square. The goal is to rearrange the tiles so that they are in row-major order, using as few moves as possible. You are permitted to slide tiles either horizontally or vertically into the blank square. The following diagram shows a sequence of moves from an initial board to the goal board.
-# A* Search Algorithm
-A* (pronounced "A-star") is a graph traversal and path search algorithm, which is often used in many fields of computer science due to its completeness, optimality, and optimal efficiency. A* is an informed search algorithm, or a best-first search, meaning that it is formulated in terms of weighted graphs: starting from a specific starting node of a graph, it aims to find a path to the given goal node having the smallest cost (least distance travelled, shortest time, etc.). It does this by maintaining a tree of paths originating at the start node and extending those paths one edge at a time until its termination criterion is satisfied.
+# Kd-Tree
+A data type to repreent a set of points in the unit square (all points have x- and y-coordinates between 0 and 1) using a 2d-tree to support efficient range search (find all of the points contained in a query rectangle) and nearest-neighbor search (find a closest point to a query point). 2d-trees have numerous applications, ranging from classifying astronomical objects to computer animation to speeding up neural networks to mining data to image retrieval.
 # Implementation
-We define a search node of the game to be a board, the number of moves made to reach the board, and the previous search node. First, insert the initial search node (the initial board, 0 moves, and a null previous search node) into a priority queue. Then, delete from the priority queue the search node with the minimum priority, and insert onto the priority queue all neighboring search nodes (those that can be reached in one move from the dequeued search node). Repeat this procedure until the search node dequeued corresponds to the goal board.
+For brute-froce implementation, I write a mutable data type PointSET.java that represents a set of points in the unit square. I used TreeSet as my 2d-tree. For a more efficient implementation, we write a mutable data type KdTree.java that uses a 2d-tree to implement the same API. A 2d-tree is a generalization of a Binary Search Tree to two-dimensional keys. The idea is to build a BST with points in the nodes, using the x- and y-coordinates of the points as keys in strictly alternating sequence.
+The prime advantage of a 2d-tree over a BST is that it supports efficient implementation of range search and nearest-neighbor search. Each node corresponds to an axis-aligned rectangle in the unit square, which encloses all of the points in its subtree. The root corresponds to the unit square; the left and right children of the root corresponds to the two rectangles split by the x-coordinate of the point at the root; and so forth.
 # Conclusion
-Project involves my solution to the slider puzzle problem. This problem is one of the assignments given
-in the online algorithm course of Princeton University. PuzzleChecker is already given
-in the specification of the assignment. My work consists of Board.java and Solver.java.
-MinPQ (already present in the Princeton's java library) data type used for the priority queue.
+Project involves my solution to the kd-tree problem. This problem is one of the assignments given
+in the online algorithm course of Princeton University. KdTreeVisualizer.java, RangeSearchVisualizer.java and NearestNeighborVisualizer.java are already given to debug our code. My work consists of KdTree.java and PointSET.java.
 
 
 # References
-* https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/specification.php
-* https://en.wikipedia.org/wiki/A*_search_algorithm
+* https://coursera.cs.princeton.edu/algs4/assignments/kdtree/specification.php
+
