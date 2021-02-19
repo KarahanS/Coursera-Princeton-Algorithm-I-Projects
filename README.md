@@ -1,4 +1,4 @@
-# Coursera-Princeton-Algorithm-1-Assignments
+# Coursera-Princeton-Algorithm-I-Projects
 My solutions to the given assignments in the online course Algorithms, Part I by Kevin Wayne and Robert Sedgewick of the Princeton University.
 
 | Week          | Assignment    |Grade  |
