@@ -34,8 +34,6 @@ in the online algorithm course of Princeton University. PercolationVisualizer is
 in the specification of the assignment. My work consists of percolation.java and percolationStats.java.
 Two WeightedQuickUnionUF objects are used in order to deal with "backwash" problem.
 
-Bonus Test Case : 0/1 (Total memory test) 
-
 # References
 * https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
 * https://en.wikipedia.org/wiki/Percolatio
