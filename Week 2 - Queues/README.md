@@ -5,8 +5,5 @@ The goal of this assignment is to implement elementary data structures using arr
 # Conclusion
 Project involves my solution to the deques and randomized queue assignment. My work consists of Deque.java, RandomizedQueue.java and Permutation.java.
 
-Bonus Test Case : 0/1 
-(Check that maximum size of any or Deque or RandomizedQueue object created is equal to k.)
-
 # References
 * https://coursera.cs.princeton.edu/algs4/assignments/queues/specification.php
